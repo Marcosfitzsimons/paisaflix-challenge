@@ -13,7 +13,7 @@ const Trailers = async () => {
   const data = await getTrailersData();
   return (
     <article className="z-20 w-full">
-      <h2 className="font-bold text-xl lg:text-2xl xl:text-3xl py-2">
+      <h2 className="font-bold text-xl lg:text-2xl xl:text-3xl py-4 lg:py-8">
         Trailers
       </h2>
       <ul className="flex flex-col gap-4 md:flex-row">

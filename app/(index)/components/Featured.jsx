@@ -16,30 +16,31 @@ const Featured = async () => {
   return (
     <section>
       <div className="w-[min(85%,1200px)] mx-auto">
-        <div className="">
-          <h2 className="">Featured</h2>
-          <p className="">View More</p>
+        <div className="flex items-center justify-between py-4 lg:py-8 font-bold">
+          <h2 className="text-xl lg:text-2xl xl:text-4xl">Featured</h2>
+          <p className="text-yellow-400 lg:text-xl">View More</p>
         </div>
-        <div className="flex flex-col gap-2 lg:grid lg:grid-cols-3">
+        <div className="flex flex-col gap-2 md:grid md:grid-cols-2 lg:grid-cols-3">
           {data.map((movie) => (
             <div
               key={movie._id}
               className="box relative w-full h-[340px] lg:h-[560px] lg:first:col-start-1 lg:first:col-end-3 after:bg-gradient-to-b after:from-transparent after:to-black after:inset-0 after:absolute after:z-10"
             >
-              <div className="relative w-[90%] mx-auto h-full py-4 flex flex-col items-start justify-between z-20">
-                <span className="bg-yellow-400 px-2 rounded-full text-black">
+              <div className="relative px-2 h-full py-5 flex flex-col items-start justify-between z-20 lg:px-4">
+                <span className="bg-yellow-400 px-4 py-1 rounded-full text-black">
                   {movie.genre}
                 </span>
-                <div className="flex flex-col gap-6">
+                <div className="flex flex-col gap-4 lg:gap-6">
                   <div className="flex items-center gap-6">
-                    <p className="flex items-center gap-1 text-slate-200">
-                      <AiOutlineClockCircle /> {movie.duration}
+                    <p className="flex items-center gap-2 text-slate-200">
+                      <AiOutlineClockCircle className="text-xl" />{" "}
+                      {movie.duration}
                     </p>
-                    <p className="flex items-center gap-1 text-slate-200">
-                      <AiOutlineEye className="text-xl" /> {movie.views}
+                    <p className="flex items-center gap-2 text-slate-200">
+                      <AiOutlineEye className="text-2xl" /> {movie.views}
                     </p>
                   </div>
-                  <h3 className="text-white font-bold text-xl lg:text-4xl">
+                  <h3 className="text-white font-bold text-2xl lg:text-4xl">
                     {movie.name}
                   </h3>
                 </div>

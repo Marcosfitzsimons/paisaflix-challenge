@@ -16,7 +16,7 @@ const Hero = async () => {
 
   return (
     <section className="relative z-10">
-      <div className="w-[min(85%,1400px)] mx-auto pt-20 flex flex-col items-start gap-8 py-4 z-20 lg:py-10 lg:pt-24 lg:gap-12">
+      <div className="w-[min(85%,1200px)] mx-auto pt-24 pb-16 flex flex-col items-start gap-8 py-4 z-20 lg:py-10 lg:pt-32 lg:pb-32">
         <div className="flex flex-col lg:gap-3">
           <h1 className="font-bold text-3xl sm:text-4xl lg:text-5xl xl:text-7xl">
             {data.name}
@@ -43,12 +43,12 @@ const Hero = async () => {
         </Link>
         <Trailers />
       </div>
-      <div className="cover-image after:bg-gradient-to-r after:from-black/50 after:to-transparent after:inset-0 after:absolute after:-z-20 lg:absolute lg:w-[50%] lg:inset-y-0 lg:right-0">
+      <div className="cover-image after:bg-gradient-to-r after:from-black/50 after:to-transparent after:inset-0 after:absolute after:-z-20 lg:absolute lg:w-[50%] lg:inset-y-0 lg:right-0 lg:after:from-black/20">
         <Image
           src={data.coverImage}
           alt="cover image"
           fill
-          className="-z-30 object-cover lg:object-top"
+          className="-z-30 object-cover object-center lg:object-top"
         />
       </div>
     </section>
