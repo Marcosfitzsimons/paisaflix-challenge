@@ -23,8 +23,12 @@ const Featured = async () => {
         </div>
         <div className="flex flex-col gap-2 md:grid md:grid-cols-2 lg:grid-cols-3">
           {data.map((movie) => (
-            <Link key={movie._id} href={`/${movie._id}`}>
-              <div className="box relative w-full h-[340px] lg:h-[560px] lg:first:col-start-1 lg:first:col-end-3 after:bg-gradient-to-b after:from-transparent after:to-black after:inset-0 after:absolute after:z-10">
+            <Link
+              key={movie._id}
+              href={`/${movie._id}`}
+              className="lg:first:col-start-1 lg:first:col-end-3"
+            >
+              <div className="box relative w-full h-[340px] lg:h-[560px] after:bg-gradient-to-b after:from-transparent after:to-black after:inset-0 after:absolute after:z-10">
                 <div className="relative px-2 h-full py-5 flex flex-col items-start justify-between z-20 lg:px-4">
                   <span className="bg-yellow-400 px-4 py-1 rounded-full text-black">
                     {movie.genre}
