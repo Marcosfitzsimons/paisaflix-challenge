@@ -4,7 +4,7 @@ const nextConfig = {
     appDir: true,
   },
   images: {
-    domains: ['loremflickr.com', 'res.cloudinary.com'],
+    domains: ['i.pravatar.cc', 'res.cloudinary.com'],
   },
 }
 

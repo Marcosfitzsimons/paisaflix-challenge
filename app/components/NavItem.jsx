@@ -9,7 +9,7 @@ const NavItem = ({ route, text }) => {
     <Link
       className={`${
         pathname == route
-          ? "border-b-4 border-b-yellow-400 font-semibold text-white"
+          ? "border-b-[3px] border-b-yellow-400 font-semibold text-white"
           : "border-b-transparent text-gray-300"
       } py-1`}
       href={route}
