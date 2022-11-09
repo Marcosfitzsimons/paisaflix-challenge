@@ -15,13 +15,13 @@ const Footer = () => {
             <label htmlFor="email" className="font-semibold">
               Join Newsletters
             </label>
-            <div className="relative flex items-center w-full max-w-[260px]">
+            <div className="relative flex items-center w-full max-w-[260px] lg:max-w-[290px]">
               <input
                 type="email"
                 name="email"
                 id="email"
                 placeholder="Insert your mail here"
-                className="w-full max-w-[260px] bg-transparent p-3 border border-gray-800 outline-none focus:outline-1 active:outline-1 focus:outline-yellow-400 active:outline-yellow-400 rounded-md"
+                className="w-full max-w-[260px] bg-transparent p-3 border border-gray-800 outline-none focus:outline-1 active:outline-1 focus:outline-yellow-400 active:outline-yellow-400 rounded-md lg:max-w-[290px]"
               />
               <div className="bg-yellow-400 rounded-lg absolute right-2">
                 <BsArrowRightShort className="text-4xl text-black cursor-pointer p-1" />
