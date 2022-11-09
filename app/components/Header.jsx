@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineSearch } from "react-icons/ai";
 import MobileNav from "./MobileNav";
+import NavItem from "./NavItem";
 
 const Header = () => {
   const navLinks = [
@@ -29,14 +30,14 @@ const Header = () => {
 
   return (
     <header className="fixed w-full backdrop-blur-md z-40">
-      <div className="w-[min(85%,1200px)] mx-auto py-3 flex items-center justify-between">
-        <div className="left flex items-center gap-8">
+      <div className="w-[min(85%,1200px)] mx-auto py-4 flex items-center justify-between">
+        <div className="left flex items-center gap-20">
           <small className="font-bold text-xl">Paisaflix</small>
           <nav className="hidden md:flex">
-            <ul className="flex gap-2">
+            <ul className="flex gap-8">
               {navLinks.map((link) => (
                 <li key={link.id}>
-                  <Link href={link.route}>{link.text}</Link>
+                  <NavItem route={link.route} text={link.text} />
                 </li>
               ))}
             </ul>
