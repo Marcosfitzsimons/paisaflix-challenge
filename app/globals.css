@@ -6,3 +6,7 @@ body {
   background-color: black;
   color: white;
 }
+
+.cover-image::after {
+  box-shadow: inset 100px 0 100px 0 rgba(0, 0, 0, 1);
+}

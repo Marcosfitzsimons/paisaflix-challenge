@@ -30,7 +30,7 @@ const Header = () => {
 
   return (
     <header className="fixed w-full backdrop-blur-md z-40">
-      <div className="w-[min(85%,1200px)] mx-auto py-4 flex items-center justify-between">
+      <div className="w-[min(85%,1400px)] mx-auto py-4 flex items-center justify-between">
         <div className="left flex items-center gap-20">
           <Link href="/">
             <small className="font-bold text-xl">Paisaflix</small>
