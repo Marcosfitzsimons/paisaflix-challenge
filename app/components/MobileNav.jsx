@@ -45,7 +45,7 @@ const MobileNav = ({ navLinks }) => {
           >
             <ul className="flex flex-col gap-3">
               {navLinks.map((link) => (
-                <li key={link.id} className="w-full">
+                <li key={link.id} className="w-full" onClick={handleShowMenu}>
                   <NavItem route={link.route} text={link.text} />
                 </li>
               ))}
