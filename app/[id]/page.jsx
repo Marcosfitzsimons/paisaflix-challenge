@@ -49,7 +49,7 @@ const MovieDetails = async ({ params }) => {
           </div>
         </article>
       </div>
-      <div className="cover-image after:bg-gradient-to-r after:from-black/50 after:to-transparent after:inset-0 after:absolute after:-z-20 lg:absolute lg:w-[50%] lg:inset-y-0 lg:right-0 lg:after:from-black/20">
+      <div className="cover-image after:bg-gradient-to-r after:from-black/50 after:to-transparent after:inset-0 after:absolute after:-z-20 lg:absolute lg:w-[45%] lg:inset-y-0 lg:right-0 lg:after:from-black/20">
         <Image
           src={data.coverImage}
           alt="cover image"
