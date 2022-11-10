@@ -11,7 +11,7 @@ const NavItem = ({ route, text }) => {
         pathname == route
           ? "border-b-[3px] border-b-yellow-400 font-semibold text-white"
           : "border-b-transparent text-gray-300"
-      } py-1`}
+      } py-1 block md:inline-block`}
       href={route}
     >
       {text}
