@@ -38,7 +38,10 @@ const Header = () => {
           <nav className="hidden md:flex">
             <ul className="flex gap-8">
               {navLinks.map((link) => (
-                <li key={link.id}>
+                <li
+                  key={link.id}
+                  className="hover:scale-105 transition-transform"
+                >
                   <NavItem route={link.route} text={link.text} />
                 </li>
               ))}

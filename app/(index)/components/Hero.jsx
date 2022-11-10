@@ -38,7 +38,7 @@ const Hero = async () => {
         </div>
         <Link
           href="/"
-          className="bg-yellow-400 text-black w-full text-center font-semibold py-2 px-10 rounded-full md:w-auto lg:py-4 lg:px-20 lg:text-lg xl:px-28"
+          className="bg-yellow-400 text-black w-full text-center font-semibold py-2 px-10 rounded-full md:w-auto lg:py-4 lg:px-20 lg:text-lg xl:px-28 hover:scale-105 transition-transform"
         >
           Watch now
         </Link>

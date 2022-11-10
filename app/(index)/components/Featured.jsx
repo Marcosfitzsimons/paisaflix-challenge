@@ -28,7 +28,7 @@ const Featured = async () => {
             <Link
               key={movie._id}
               href={`/${movie._id}`}
-              className="lg:first:col-start-1 lg:first:col-end-3"
+              className="lg:first:col-start-1 lg:first:col-end-3 hover:-translate-y-2 transition-transform"
             >
               <div className="relative w-full h-[340px] lg:h-[560px] after:bg-gradient-to-b after:from-transparent after:to-black after:inset-0 after:absolute after:z-10">
                 <div className="relative px-2 h-full py-5 flex flex-col items-start justify-between z-20 lg:px-4">
