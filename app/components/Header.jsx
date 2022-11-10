@@ -53,6 +53,7 @@ const Header = () => {
               src="https://i.pravatar.cc/45"
               alt="avatar"
               fill
+              sizes="20vw"
             />
           </div>
 

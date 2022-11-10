@@ -26,6 +26,7 @@ const Trailers = async () => {
               src={trailer.trailerImage}
               alt="trailer image"
               fill
+              sizes="(max-width: 768px) 100vw, 33vw"
               className="object-cover"
             />
             <p className="absolute -bottom-[14px] right-3 z-30 text-2xl font-bold">

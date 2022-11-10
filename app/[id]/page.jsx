@@ -38,12 +38,13 @@ const MovieDetails = async ({ params }) => {
           <h2 className="font-bold text-xl lg:text-2xl xl:text-3xl py-4 lg:py-8">
             Trailer
           </h2>
-          <div className="relative w-full h-36 after:bg-gradient-to-b after:from-transparent after:to-black/30 after:inset-0 after:absolute after:z-10">
+          <div className="relative w-80 h-44 after:bg-gradient-to-b after:from-transparent after:to-black/30 after:inset-0 after:absolute after:z-10">
             <Image
               src={data.trailerImage}
               alt="trailer image"
               fill
               className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 50vw"
             />
           </div>
         </article>
@@ -54,6 +55,7 @@ const MovieDetails = async ({ params }) => {
           alt="cover image"
           fill
           className="-z-30 object-cover object-center lg:object-top"
+          sizes="(max-width: 480px) 100vw, 30vw"
         />
       </div>
     </section>

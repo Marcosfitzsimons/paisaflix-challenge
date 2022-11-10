@@ -53,6 +53,7 @@ const Featured = async () => {
                   alt={movie.name}
                   fill
                   className="lg:object-cover lg:object-center -z-10"
+                  sizes="(max-width: 768px) 100vw, 40vw"
                 />
               </div>
             </Link>

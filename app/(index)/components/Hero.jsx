@@ -49,6 +49,8 @@ const Hero = async () => {
           alt="cover image"
           fill
           className="-z-30 object-cover object-center lg:object-top"
+          priority
+          sizes="(max-width: 1024px) 100vw, 50vw"
         />
       </div>
     </section>
