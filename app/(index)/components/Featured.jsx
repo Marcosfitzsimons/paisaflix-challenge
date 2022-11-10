@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineClockCircle, AiOutlineEye } from "react-icons/ai";
+import toHoursAndMinutes from "../../utils/toHoursAndMinutes";
 
 const getFeaturedData = async () => {
   const res = await fetch(
@@ -37,7 +38,7 @@ const Featured = async () => {
                     <div className="flex items-center gap-6">
                       <p className="flex items-center gap-2 text-slate-200">
                         <AiOutlineClockCircle className="text-xl" />{" "}
-                        {movie.duration}
+                        {toHoursAndMinutes(movie.duration)}
                       </p>
                       <p className="flex items-center gap-2 text-slate-200">
                         <AiOutlineEye className="text-2xl" /> {movie.views}

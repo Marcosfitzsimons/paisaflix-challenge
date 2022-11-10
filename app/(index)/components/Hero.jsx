@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Trailers from "./Trailers";
+import toHoursAndMinutes from "../../utils/toHoursAndMinutes";
 
 const getHeroData = async () => {
   const res = await fetch(
@@ -32,7 +33,7 @@ const Hero = async () => {
         </p>
         <div className="flex flex-col gap-2 text-sm lg:text-base lg:gap-4 pb-2">
           <p>Genre : {data.genre}</p>
-          <p>Duration : {data.duration}</p>
+          <p>Duration : {toHoursAndMinutes(data.duration)}</p>
           <p>Ratings : {data.rating}</p>
         </div>
         <Link

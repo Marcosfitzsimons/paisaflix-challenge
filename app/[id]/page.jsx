@@ -1,3 +1,4 @@
+import toHoursAndMinutes from "../utils/toHoursAndMinutes";
 import Image from "next/image";
 
 const getMovieData = async (id) => {
@@ -10,6 +11,7 @@ const getMovieData = async (id) => {
 
 const MovieDetails = async ({ params }) => {
   const data = await getMovieData(params.id);
+
   return (
     <section className="relative z-10">
       <div className="w-[min(85%,1200px)] mx-auto pt-24 pb-16 flex flex-col items-start gap-8 py-4 z-20 lg:py-10 lg:pt-32 lg:pb-32">
@@ -28,7 +30,7 @@ const MovieDetails = async ({ params }) => {
         </p>
         <div className="flex flex-col gap-2 text-sm lg:text-base lg:gap-4 pb-2">
           <p>Genre : {data.genre}</p>
-          <p>Duration : {data.duration}</p>
+          <p>Duration : {toHoursAndMinutes(data.duration)}</p>
           <p>Ratings : {data.rating}</p>
         </div>
         <span className="bg-yellow-400 text-black w-full text-center font-semibold py-2 px-10 rounded-full md:w-auto lg:py-4 lg:px-20 lg:text-lg xl:px-28 cursor-pointer">
