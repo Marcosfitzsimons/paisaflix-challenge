@@ -41,7 +41,7 @@ const MobileNav = ({ navLinks }) => {
             initial="closed"
             animate="open"
             exit="exit"
-            className="min-h-screen absolute inset-y-0 right-0 left-[40%] py-[min(20rem,15vh)] px-8 backdrop-blur-md md:hidden"
+            className="min-h-screen absolute inset-y-0 right-0 left-[40%] py-[min(20rem,15vh)] px-8 bg-white/10 backdrop-blur-md md:hidden "
           >
             <ul className="flex flex-col gap-3">
               {navLinks.map((link) => (
