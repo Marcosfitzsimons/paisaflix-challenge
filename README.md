@@ -11,7 +11,7 @@ My first Next.js 13 app in which I was able to practice concepts such as:
 - Loading UI for a specific part.
 - Server components & client components.
 - Fetching Data with Server Components.
-- <Link> component.
+- Link component.
 - New optimized Image component.
 - @next/font to optimize fonts.
 
