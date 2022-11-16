@@ -1,34 +1,39 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Paisaflix - Challenge
 
-## Getting Started
+A movie page that allows users to navigate between pages and by clicking on each of the images in the Featured section, display the corresponding movie in a new route.
 
-First, run the development server:
+### What I learned
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+My first Next.js 13 app in which I was able to practice concepts such as:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- New /app directory.
+- New file-system based router.
+- Loading UI for a specific part.
+- Server components & client components.
+- Fetching Data with Server Components.
+- <Link> component.
+- New optimized Image component.
+- @next/font to optimize fonts.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Screenshot
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+![](./public/screenshot-p.png)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Links
 
-## Learn More
+- Live Site URL: [Here](https://paisaflix-challenge.vercel.app/)
 
-To learn more about Next.js, take a look at the following resources:
+### Built with
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- Grid
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+- [Next](https://beta.nextjs.org/docs) - React framework
+- [TailwindCSS](https://tailwindcss.com/) - For styles
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Author
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Website - [Marcos Valentín Fitzsimons](https://marcosfitzsimons-portfolio.vercel.app/)
